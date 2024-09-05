@@ -1,10 +1,22 @@
 import fake_math as fm
 import true_math as tm
 
-result1 = fm.divide(69, 3)
-result2 = fm.divide(3, 0)
-result3 = tm.divide(49, 7)
-result4 = tm.divide(15, 0)
+# result1 = fm.divide(69, 3)
+# result2 = fm.divide(3, 0)
+# result3 = tm.divide(49, 7)
+# result4 = tm.divide(15, 0)
+
+
+fake_divide = fm.divide
+true_divide = tm.divide
+
+
+result1 = fake_divide(69, 3)
+result2 = fake_divide(3, 0)
+result3 = true_divide(49, 7)
+result4 = true_divide(15, 0)
+
+
 print(result1)
 print(result2)
 print(result3)
